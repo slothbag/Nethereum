@@ -38,11 +38,8 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="EdjCase.JsonRpc.Client">
-      <HintPath>..\..\gx packages\EdjCase.JsonRpc.Client\EdjCase.JsonRpc.Client.1.0.5\lib\netstandard1.1\EdjCase.JsonRpc.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="EdjCase.JsonRpc.Core">
-      <HintPath>..\..\gx packages\EdjCase.JsonRpc.Client\EdjCase.JsonRpc.Core.1.0.4\lib\netstandard1.1\EdjCase.JsonRpc.Core.dll</HintPath>
+    <Reference Include="EdjCase.JsonRpc">
+      <HintPath>Z:\DApps\RexCore\EdjCase.JsonRpc.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -466,40 +463,40 @@
       <Link>Nethereum.RPC\Web3\Web3Sha3.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Eth.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Eth.cs</Link>
+      <Link>Nethereum.Web3\Eth.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Net.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Net.cs</Link>
+      <Link>Nethereum.Web3\Net.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Personal.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Personal.cs</Link>
+      <Link>Nethereum.Web3\Personal.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Shh.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Shh.cs</Link>
+      <Link>Nethereum.Web3\Shh.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\UnitConversion.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\UnitConversion.cs</Link>
+      <Link>Nethereum.Web3\UnitConversion.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Web3.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Web3.cs</Link>
+      <Link>Nethereum.Web3\Web3.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Contracts\Contract.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Contracts\Contract.cs</Link>
+      <Link>Nethereum.Web3\Contracts\Contract.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Contracts\DeployContract.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Contracts\DeployContract.cs</Link>
+      <Link>Nethereum.Web3\Contracts\DeployContract.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Contracts\Event.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Contracts\Event.cs</Link>
+      <Link>Nethereum.Web3\Contracts\Event.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Contracts\EventTopicBuilder.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Contracts\EventTopicBuilder.cs</Link>
+      <Link>Nethereum.Web3\Contracts\EventTopicBuilder.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Contracts\Function.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Contracts\Function.cs</Link>
+      <Link>Nethereum.Web3\Contracts\Function.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Contracts\FunctionBase.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Contracts\FunctionBase.cs</Link>
+      <Link>Nethereum.Web3\Contracts\FunctionBase.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Properties\AssemblyInfo.cs">
       <Link>Nethereum.Web3\Properties\AssemblyInfo.cs</Link>
@@ -583,13 +580,13 @@
       <Link>Nethereum.RPC\DebugGeth\DTOs\TraceTransactionOptions.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Admin.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Admin.cs</Link>
+      <Link>Nethereum.Web3\Admin.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\DebugGeth.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\DebugGeth.cs</Link>
+      <Link>Nethereum.Web3\DebugGeth.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.Web3\Miner.cs">
-      <Link>Nethereum.Web3\Nethereum.Web3\Miner.cs</Link>
+      <Link>Nethereum.Web3\Miner.cs</Link>
     </Compile>
     <Compile Include="..\src\Nethereum.RPC\Admin\AdminAddPeer.cs">
       <Link>Nethereum.RPC\Admin\AdminAddPeer.cs</Link>
@@ -653,6 +650,441 @@
     </Compile>
     <Compile Include="..\src\Nethereum.JsonRpc.Client\RPCResponseException.cs">
       <Link>Nethereum.JsonRpc.Client\RPCResponseException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\TransactionSigning.cs">
+      <Link>Nethereum.Web3\TransactionSigning.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\VmStackErrorChecker.cs">
+      <Link>Nethereum.Web3\VmStackErrorChecker.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\Transaction.cs">
+      <Link>Nethereum.Web3\Core\Transaction.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Encodable.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Encodable.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1EncodableVector.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1EncodableVector.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Exception.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Exception.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\ASN1Generator.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\ASN1Generator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1InputStream.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1InputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Null.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Null.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Object.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Object.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1OctetString.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1OctetString.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\ASN1OctetStringParser.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\ASN1OctetStringParser.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Sequence.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Sequence.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\ASN1SequenceParser.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\ASN1SequenceParser.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Tags.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\Asn1Tags.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DefiniteLengthInputStream.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DefiniteLengthInputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DERGenerator.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DERGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerInteger.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerInteger.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerNull.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerNull.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerObjectIdentifier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerObjectIdentifier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerOctetString.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerOctetString.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerOutputStream.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerSequence.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DerSequence.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DERSequenceGenerator.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\DERSequenceGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\IAsn1Convertible.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\IAsn1Convertible.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\LimitedInputStream.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\LimitedInputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\sec\SECNamedCurves.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\sec\SECNamedCurves.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\sec\SECObjectIdentifiers.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\sec\SECObjectIdentifiers.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9Curve.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9Curve.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ECParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ECParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ECParametersHolder.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ECParametersHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ECPoint.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ECPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9FieldElement.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9FieldElement.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9FieldID.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9FieldID.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9IntegerConverter.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9IntegerConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ObjectIdentifiers.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\asn1\x9\X9ObjectIdentifiers.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\AsymmetricKeyParameter.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\AsymmetricKeyParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\BufferedBlockCipher.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\BufferedBlockCipher.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\BufferedCipherBase.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\BufferedCipherBase.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\Check.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\Check.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\CryptoException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\CryptoException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\DataLengthException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\DataLengthException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IAsymmetricBlockCipher.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IAsymmetricBlockCipher.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IBlockCipher.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IBlockCipher.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IBufferedCipher.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IBufferedCipher.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\ICipherParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\ICipherParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IDigest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IDigest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IDSA.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IDSA.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IMac.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\IMac.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\InvalidCipherTextException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\InvalidCipherTextException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\ISigner.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\ISigner.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\OutputLengthException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\OutputLengthException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\GeneralDigest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\GeneralDigest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\LongDigest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\LongDigest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\RipeMD160Digest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\RipeMD160Digest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha1Digest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha1Digest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha224Digest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha224Digest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha256Digest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha256Digest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha384Digest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha384Digest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha512Digest.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\digests\Sha512Digest.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\ec\CustomNamedCurves.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\ec\CustomNamedCurves.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\engines\AesEngine.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\engines\AesEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\engines\AesFastEngine.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\engines\AesFastEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\macs\HMac.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\macs\HMac.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\paddings\BlockCipherPadding.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\paddings\BlockCipherPadding.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\paddings\PaddedBufferedBlockCipher.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\paddings\PaddedBufferedBlockCipher.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\paddings\Pkcs7Padding.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\paddings\Pkcs7Padding.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECDomainParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECDomainParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECKeyParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECKeyParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECPrivateKeyParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECPrivateKeyParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECPublicKeyParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\ECPublicKeyParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\KeyParameter.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\parameters\KeyParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\ECDsaSigner.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\ECDsaSigner.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\HMacDsaKCalculator.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\HMacDsaKCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\IDsaKCalculator.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\IDsaKCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\RandomDsaKCalculator.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\signers\RandomDsaKCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\util\Pack.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\crypto\util\Pack.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\BigInteger.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\BigInteger.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECAlgorithms.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECAlgorithms.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECCurve.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECCurve.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECFieldElement.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECFieldElement.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECPoint.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECPointMap.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ECPointMap.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\LongArray.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\LongArray.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ScaleXPointMap.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\ScaleXPointMap.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\abc\SimpleBigDecimal.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\abc\SimpleBigDecimal.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\abc\Tnaf.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\abc\Tnaf.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\abc\ZTauElement.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\abc\ZTauElement.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1Curve.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1Curve.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1Field.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1Field.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1FieldElement.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1FieldElement.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1Point.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\custom\sec\SecP256K1Point.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\ECEndomorphism.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\ECEndomorphism.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\GlvEndomorphism.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\GlvEndomorphism.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\GlvTypeBEndomorphism.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\GlvTypeBEndomorphism.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\GlvTypeBParameters.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\endo\GlvTypeBParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\AbstractECMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\AbstractECMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\DoubleAddMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\DoubleAddMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\ECMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\ECMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\FixedPointCombMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\FixedPointCombMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\FixedPointPreCompInfo.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\FixedPointPreCompInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\FixedPointUtilities.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\FixedPointUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\GlvMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\GlvMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\PreCompInfo.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\PreCompInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WNafL2RMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WNafL2RMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WNafPreCompInfo.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WNafPreCompInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WNafUtilities.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WNafUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WTauNafMultiplier.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WTauNafMultiplier.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WTauNafPreCompInfo.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\ec\multiplier\WTauNafPreCompInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\FiniteFields.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\FiniteFields.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\GenericPolynomialExtensionField.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\GenericPolynomialExtensionField.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\GF2Polynomial.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\GF2Polynomial.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IExtensionField.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IExtensionField.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IFiniteField.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IFiniteField.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IPolynomial.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IPolynomial.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IPolynomialExtensionField.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\IPolynomialExtensionField.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\PrimeField.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\field\PrimeField.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\raw\Mod.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\raw\Mod.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\raw\Nat.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\raw\Nat.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\raw\Nat256.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\math\raw\Nat256.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\GeneralSecurityException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\GeneralSecurityException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\InvalidKeyException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\InvalidKeyException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\KeyException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\KeyException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\SecureRandom.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\security\SecureRandom.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\Arrays.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\Arrays.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\BigIntegers.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\BigIntegers.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\IMemoable.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\IMemoable.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\Platform.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\Platform.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\encoders\Hex.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\encoders\Hex.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\encoders\HexEncoder.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\encoders\HexEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\encoders\IEncoder.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\encoders\IEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\BaseInputStream.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\BaseInputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\FilterStream.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\FilterStream.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\StreamOverflowException.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\StreamOverflowException.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\Streams.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\BouncyCastle\util\io\Streams.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\Crypto\DeterministicECDSA.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\Crypto\DeterministicECDSA.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\Crypto\ECDSASignature.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\Crypto\ECDSASignature.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\Crypto\ECKey.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\Crypto\ECKey.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.Web3\Core\EllipticCurve\Crypto\EthereumECKey.cs">
+      <Link>Nethereum.Web3\Core\EllipticCurve\Crypto\EthereumECKey.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.ABI\Util\RLP\ConvertorForRLPEncodingExtensions.cs">
+      <Link>Nethereum.ABI\Util\RLP\ConvertorForRLPEncodingExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.ABI\Util\RLP\RLP.cs">
+      <Link>Nethereum.ABI\Util\RLP\RLP.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.ABI\Util\RLP\RLPCollection.cs">
+      <Link>Nethereum.ABI\Util\RLP\RLPCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.ABI\Util\RLP\RLPElement.cs">
+      <Link>Nethereum.ABI\Util\RLP\RLPElement.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.ABI\Util\RLP\RLPItem.cs">
+      <Link>Nethereum.ABI\Util\RLP\RLPItem.cs</Link>
+    </Compile>
+    <Compile Include="..\src\Nethereum.ABI\Util\RLP\RLPStringFormatter.cs">
+      <Link>Nethereum.ABI\Util\RLP\RLPStringFormatter.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
